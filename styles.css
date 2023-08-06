@@ -1,0 +1,58 @@
+body {
+	font: 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    top: 15%;
+	background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+h1 {
+    margin-top: 10vh;
+    font: 600 3.5em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    width: 100%;
+}
+
+h2 {
+    text-decoration: underline overline;
+    margin-top: -20px;
+}
+
+h3 {
+	font: 600 1em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.01em;
+    margin-top: 0.5em;
+}
+
+input[type="color"] {
+    margin: 0 5px;
+    border-radius: 5px;
+    border-color: #666666aa;
+    background: #ffffffaa;
+    margin-top: 15px;
+}
+
+.fancyButton {
+    border-radius: 15px;
+    border: none;
+    padding: 10px 15px 10px 15px;
+    margin-top: 4vh;
+    background-color: #22222288;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.fancyButton:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 5px 0 #ffffffaa;
+}
