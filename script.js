@@ -29,7 +29,11 @@ const randomHexColor = () => {
 };
 
 const copyGradient = () => {
-	navigator.clipboard.writeText(copyText.value);
+	navigator.clipboard.writeText(h3.value);
+	copyBgButton.textContent = "Copied!";
+	setTimeout(function(){
+		copyBgButton.textContent = "Copy Gradient";
+	}, 2500);
 }
 
 //Copy the current Background Gradient to Clipboard
