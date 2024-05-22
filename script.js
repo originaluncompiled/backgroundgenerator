@@ -3,10 +3,12 @@ var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
 var button = document.querySelector(".fancyButton");
+const copyBgButton = document.getElementById("copyGradient");
 
 function setGradient() {
 	body.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
 	h3.textContent = "background: " + body.style.background + ";";
+	h3.value = h3.textContent;
 }
 
 color1.addEventListener("input", setGradient);
@@ -25,6 +27,13 @@ const randomHexColor = () => {
 	let b = Math.floor(Math.random() * 256).toString(16).padStart(2, '0');
 	return "#" + r + g + b;
 };
+
+const copyGradient = () => {
+	navigator.clipboard.writeText(copyText.value);
+}
+
+//Copy the current Background Gradient to Clipboard
+copyBgButton.addEventListener("click", copyGradient);
 
 //Randomize Background Button
 button.addEventListener("click", randomColorApplier);
